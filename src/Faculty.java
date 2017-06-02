@@ -1,27 +1,50 @@
 
 public class Faculty extends Person { 
 
-	public Faculty(){
+	private String name;
+	private String job = "Professor"; 
+	private int salary = 1500;   
+	private int id = 0215164;
+	private String [] education; 
 
+	
+	public Faculty() {
+		
 	}
-
-	@Override 
-	public String name(){
-		setName("Harry"); 
-		return name();
+	@Override
+	public void setName(String name){
+		this.name = "Profesor " + name;
+	}
+	
+	public void setjob(String job){
+		this.job = job; 
 	} 
-
-	@Override 
-	public String job(){
-		setJob("custodian"); 
-		return job();
+	
+	public String getjob(){
+		return job;
 	}
-
+	
+	
+	public void setsalary(int salary){
+		this.salary= salary; 
+	} 
+	
+	public int getsalary(){
+		return salary;
+	}  
+	
+	public String[] geteducation(){
+		return education;
+	} 
+	
+	public void seteducation(){
+		this.education = education;
+	}
+	
 	@Override 
-	public String education(){ 
-		setEducation("highschool"); 
-		return education();
-
+	public void setid(int id){
+		this.id =id; 
+		
 	}
 
 }
