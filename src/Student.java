@@ -1,7 +1,9 @@
 
 public class Student { 
 	
-	private String status = "full time"; 
+	private String status;  
+	private String name;
+	
 	
 	
 	public void setStatus(String status){
@@ -13,5 +15,16 @@ public class Student {
 		return status; 
 	} 
 	
-
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public String getName(){
+		return name;
+	} 
+	
+	
+	
+	
 }
